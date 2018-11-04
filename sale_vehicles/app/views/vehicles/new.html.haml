@@ -1,0 +1,10 @@
+%header( class="row f-align-items-center mt1 cf" )
+  .col-3.col-md-3
+    %h1(class="main_title") New vehicle
+%br/
+
+= render 'form'
+
+%br/
+%button{type: "submit", form: "new_vehicle_form", value: "Submit", class: 'btn btn-raised btn-info'} Create
+= link_to 'Back', vehicles_path, class: 'btn btn-raised btn-primary'

@@ -1,0 +1,12 @@
+- if notice
+  :javascript
+    iziToast.success({ message: "#{ notice }"});
+- if alert
+  :javascript
+      iziToast.error({ message: "#{ alert }" });
+- if flash[:error]
+  - flash[:error].each do |error|
+    :javascript
+      iziToast.error({
+        message: "#{ error }"
+      });
