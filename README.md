@@ -14,6 +14,7 @@ irb ./matrix_test
 
 # RoR Test Vehicles
 ```
+cd sale_vehicles
 bundle install
 rails db:create db:migrate
 rails s -p 3000 -b 0.0.0.0
